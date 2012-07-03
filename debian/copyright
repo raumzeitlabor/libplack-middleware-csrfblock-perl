@@ -1,7 +1,7 @@
-Format-Specification: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Maintainer: Rintaro Ishizaki <rintaro@cpan.org>
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Contact: Rintaro Ishizaki <rintaro@cpan.org>
 Source: http://search.cpan.org/dist/Plack-Middleware-CSRFBlock/
-Name: Plack-Middleware-CSRFBlock
+Upstream-Name: Plack-Middleware-CSRFBlock
 
 Files: *
 Copyright: Rintaro Ishizaki <rintaro@cpan.org>
