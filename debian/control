@@ -4,8 +4,7 @@ Priority: optional
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Uploaders: Michael Stapelberg <stapelberg@debian.org>
 Build-Depends: debhelper (>= 8)
-Build-Depends-Indep: libdigest-sha1-perl,
- libplack-middleware-session-perl,
+Build-Depends-Indep: libplack-middleware-session-perl,
  libplack-perl,
  perl,
  perl-modules (>= 6.42)
@@ -17,7 +16,6 @@ Homepage: http://search.cpan.org/dist/Plack-Middleware-CSRFBlock/
 Package: libplack-middleware-csrfblock-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
- libdigest-sha1-perl,
  libplack-middleware-session-perl,
  libplack-perl
 Description: CSRF are never propageted to app
