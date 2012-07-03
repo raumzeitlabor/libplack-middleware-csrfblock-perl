@@ -8,7 +8,7 @@ Build-Depends-Indep: libplack-middleware-session-perl,
  libplack-perl,
  perl,
  perl-modules
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-perl/packages/libplack-middleware-csrfblock-perl.git
 Vcs-Git: git://git.debian.org/pkg-perl/packages/libplack-middleware-csrfblock-perl.git
 Homepage: http://search.cpan.org/dist/Plack-Middleware-CSRFBlock/
@@ -18,7 +18,15 @@ Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
  libplack-middleware-session-perl,
  libplack-perl
-Description: CSRF are never propageted to app
- (no description was found)
+Description: Plack middleware to block CSRF (cross-site request forgery)
+ This middleware blocks CSRF. You can use this middleware without any
+ modifications to your application, in most cases.
  .
- This description was automagically extracted from the module by dh-make-perl.
+ When the application response content-type is "text/html" or
+ "application/xhtml+xml", this middleware inserts a hidden input tag that
+ contains a token string into all POST-forms found in the response body.
+ .
+ For every POST requests, this middleware ensures that the input parameters
+ contain the collect token parameter. If not found, the middleware throws an
+ HTTP error 403 (Forbidden) and the forged request does not even reach your
+ application.
