@@ -1,4 +1,4 @@
-libplack-middleware-csrfblock-perl (0.03-1) unstable; urgency=low
+libplack-middleware-csrfblock-perl (0.05-1) unstable; urgency=low
 
   * Initial Release (Closes: #680071)
 
