@@ -1,4 +1,14 @@
-libplack-middleware-csrfblock-perl (0.05-1) unstable; urgency=low
+libplack-middleware-csrfblock-perl (0.05-1) UNRELEASED; urgency=low
+
+  TODO:
+  - I'd remove d/<pkg>.docs, the README is just a text version of the POD
+  - d/copyright:
+    + M::I missing
+    + there is no copyright statement anywhere in the upstream code
+      -> don't distribute it
+      -> ask upstream
+      -> add the Berne convention blurb (author ==> copyright holder)
+  - d/control: remove perl-modules (gets pulled in by perl)
 
   * Initial Release (Closes: #680071)
 
